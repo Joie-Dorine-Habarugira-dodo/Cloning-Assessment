@@ -10,13 +10,13 @@
 
 <body>
     <section id="navbar">
-        <div class="flex justify-between mx-auto px-10  bg-[#EFF8FE]">
+        <div class="flex-wrap md:flex-nowrap flex justify-between mx-auto px-10  bg-[#EFF8FE]">
             <div class="flex my-2">
-                <div class="border-r size-10 p-[10px]"> <img src="linkedin.svg" class="size-4" alt=""></div>
-                <div class="border-r size-10 p-[10px]"> <img src="twitter.svg" class="size-4" alt=""></div>
-                <div class="border-r size-10 p-[10px]"> <img src="facebook.svg" class="size-4" alt=""></div>
-                <div class="border-r size-10 p-[10px]"> <img src="youtube.svg" class="size-4" alt=""></div>
-                <div class="size-10 p-[10px]"> <img src="instagram.svg " class="size-4" alt=""></div>
+                <div class="border-r size-10 p-[10px]"> <img src="linkedin.png" class="size-4" alt=""></div>
+                <div class="border-r size-10 p-[10px]"> <img src="twitter.png" class="size-4" alt=""></div>
+                <div class="border-r size-10 p-[10px]"> <img src="facebook.png" class="size-4" alt=""></div>
+                <div class="border-r size-10 p-[10px]"> <img src="youtube.png" class="size-4" alt=""></div>
+                <div class="size-10 p-[10px]"> <img src="instagram.png" class="size-4" alt=""></div>
             </div>
             <div class="flex my-2">
                 <div class="border-r p-[10px] font-light text-sm">Online Services
@@ -25,10 +25,10 @@
                 <div class="p-[10px] font-light text-sm">Publications</div>
             </div>
         </div>
-        <div class="px-10 pt-6 pb-20">
-            <div class="flex justify-between ">
+        <div class="md:px-10 pt-6 pb-20">
+            <div class="flex justify-between flex-wrap md:flex-nowrap ">
                 <div><img src="logo.png" alt="" class="w-[170px] h-[90px]"></div>
-                <div class="flex mt-4">
+                <div class="hidden md:flex mt-4">
                     <div class="flex border-r my-4 px-4">
                         <div class="border rounded-full size-10 p-2 mx-2 mt-[4px]"><img src="phone.svg" class="size-6"
                                 alt=""></div>
@@ -49,7 +49,7 @@
             </div>
 
         </div>
-        <div class="z-10 absolute bg-[#242E8F] rounded-md mx-10 py-6 pl-8 pr-[350px] -mt-[45px] ">
+        <div class="z-[100] sticky top-0 bg-[#242E8F] rounded-md md:mx-10 py-6 pl-8 pr-[350px] -mt-[45px] ">
             <button
                 class="text-white font-normal hover:border-b hover:border-b-2 hover:border-[#F8A51B] px-4 py-2">HOME</button>
             <button
@@ -66,18 +66,21 @@
                 & EVENTS</button>
         </div>
     </section>
-    <section id="section2" class="mx-auto bg-[#E7ECEF]">
-        <div class="flex justify-between px-10 py-6">
+     
+    <section id="section2" class="mx-auto relative overflow-hidden">
+        <div class="absolute inset-0 bg-[#e7ecef9a] bg-blend-overlay bg-[url('background1.jpeg')] bg-cover bg-center z-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-[#E7ECEF]  to-transparent z-10"></div>
+        <div class="flex justify-between px-10 py-6 relative z-30">
             <div class="w-96 py-20">
-                <h3 class="font-thin text-2xl"><span class="font-bold text-2xl">Member First</span> , data-driven,
+                <h3 class="font-thin text-2xl"><span class="font-bold text-2xl text-[#F8A51B]">Member First</span> , data-driven,
                     evidence-based and high performing organization.</h3>
                 <p class="font-bold text-xl text-[#242E8F]">Members First</p>
                 <button class=" bg-[#242E8F] text-white font-bold px-14 py-4 my-6 rounded-md">Learn More</button>
             </div>
-            <!-- <img src="background1.jpeg" class="size-96" alt=""> -->
+            <!-- <img src="background-heading.png" class="size-96" alt=""> -->
         </div>
     </section>
-    <div class="z-20 bg-white flex justify-center absolute mx-52 -mt-[105px] ">
+    <div class="z-[100] bg-white flex overflow-x-scroll flex-nowrap scrollbar-hide md:justify-center absolute md:mx-52 -mt-[105px] ">
         <div class="border px-8 py-2 w-60">
             <img src="members.png" class="w-16 h-12" alt="">
             <h4 class="font-bold text-lg tracking-wide my-2">Member First</h4>
@@ -104,19 +107,19 @@
                 our members</p>
         </div>
     </div>
-    <section class="bg-[#F7F7F7] px-20 pt-52 pb-16">
-        <h1 class="text-center text-4xl font-extrabold text-[#4B5563] mx-auto w-[900px]">Optimistic and forward-looking
+    <section class="bg-[#F7F7F7] px-3 md:px-20 pt-52 pb-16">
+        <h1 class="md:text-center text-2xl md:text-4xl font-extrabold text-[#4B5563] mx-auto md:w-[900px]">Optimistic and forward-looking
             agent of central government, working to achieve
             <span class="text-[#242E8F]">the financial security and health of
                 all Rwandans.</span>
         </h1>
     </section>
     <section>
-        <div class="flex space-x-4 justify-center my-10">
+        <div class="flex space-x-1 md:space-x-4 justify-center my-10">
             <div class="border border-[#F8A51B] border-2 w-8 my-3"></div>
             <H2 class="font-bold text-lg text-[#242E8F]">SOCIAL PROTECTION SCHEMES</H2>
         </div>
-        <div class="grid grid-cols-3 gap-2 p-10">
+        <div class="grid grid-flow-row md:grid-cols-3 gap-2 p-2 md:p-10">
             <div
                 class=" group border rounded-md p-16 hover:bg-[#242f8fb1] hover:bg-[url(pension-image.jpeg)] hover:bg-cover hover:bg-center hover:bg-blend-multiply">
                 <img src="pension.svg" class="size-16 my-2 mx-auto group-hover:invert" alt="">
@@ -125,7 +128,7 @@
                 <p class="text-gray my-2 text-center group-hover:text-white">Retire With Dignity</p>
                 <a href="" class="hidden text-white text-medium text-center font-semibold relative group-hover:block">
                     LEARN MORE
-                    <span class="absolute left-14 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
+                    <span class="absolute left-28 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
                 </a>
             </div>
             <div
@@ -136,7 +139,7 @@
                 <p class="text-gray my-2 text-center group-hover:text-white">We Are Here For You</p>
                 <a href="" class="hidden text-white text-medium text-center font-semibold relative group-hover:block">
                     LEARN MORE
-                    <span class="absolute left-14 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
+                    <span class="absolute left-28 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
                 </a>
             </div>
             <div
@@ -147,18 +150,18 @@
                 <p class="text-gray my-2 text-center group-hover:text-white">Our Health, Our Future</p>
                 <a href="" class="hidden text-white text-medium text-center font-semibold relative group-hover:block">
                     LEARN MORE
-                    <span class="absolute left-14 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
+                    <span class="absolute left-28 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
                 </a>
             </div>
             <div
-                class=" group border rounded-md p-16 hover:bg-[#242f8fb1] hover:bg-[url(cbhi-image.jpeg)] hover:bg-cover hover:bg-center hover:bg-blend-multiply">
+                class=" group border rounded-md p-16 hover:bg-[#242f8fb1] hover:bg-[url(ejoheza-image.jpeg)] hover:bg-cover hover:bg-center hover:bg-blend-multiply">
                 <img src="cbhi.svg" class="size-16 my-2 mx-auto group-hover:invert" alt="">
                 <h4 class="font-bold text-medium text-center my-2 group-hover:text-[#f8a51b] ">CBHI SCHEME
                 </h4>
                 <p class="text-gray my-2 text-center group-hover:text-white">Giving You Happiness At Best Rate</p>
                 <a href="" class="hidden text-white text-medium text-center font-semibold relative group-hover:block">
                     LEARN MORE
-                    <span class="absolute left-14 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
+                    <span class="absolute left-28 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
                 </a>
             </div>
             <div
@@ -169,7 +172,7 @@
                 <p class="text-gray my-2 text-center group-hover:text-white">Start Early and Reap The Rewards.</p>
                 <a href="" class="hidden text-white text-medium text-center font-semibold relative group-hover:block">
                     LEARN MORE
-                    <span class="absolute left-14 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
+                    <span class="absolute left-28 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
                 </a>
             </div>
             <div
@@ -181,33 +184,33 @@
                     Salary</p>
                 <a href="" class="hidden text-white text-medium text-center font-semibold relative group-hover:block">
                     LEARN MORE
-                    <span class="absolute left-14 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
+                    <span class="absolute left-28 -bottom-2 w-8 h-1 bg-[#f8a51b]"></span>
                 </a>
             </div>
         </div>
     </section>
-    <section class="bg-[#F9FAFB] flex overflow-hidden space-x-32 px-10 py-24">
-        <div class="w-[500px] my-[80px] flex-none">
-            <h3 class="font-bold text-4xl text-[#1F2F4F] my-4">Never miss your contributions again</h3>
-            <p class="text-gray-600 text-lg my-4"><span class="text-[#f8a51b]">Imisanzu</span> revolutionizes the way
+    <section class="bg-[#F9FAFB] flex flex-wrap md:flex-nowrap md:overflow-hidden space-x-2 md:space-x-32 p-2 md:px-10 md:py-24">
+        <div class="md:w-[500px] my-2 md:my-[80px] flex-none">
+            <h3 class="font-bold text-2xl md:text-4xl text-[#1F2F4F] my-4">Never miss your contributions again</h3>
+            <p class="text-gray-600 md:text-lg my-4"><span class="text-[#f8a51b]">Imisanzu</span> revolutionizes the way
                 you manage your social security contributions. Access your information anytime, anywhere with ease and
                 security. Enjoy convenience and transparency. Take control of your future and join Imisanzu today.</p>
-            <button class=" bg-[#242E8F] text-white font-bold px-14 py-4 my-6 rounded-md">Get Started</button>
+            <button class=" bg-[#242E8F] text-white font-bold px-14 py-4 md:my-6 rounded-md">Get Started</button>
         </div>
         <img src="imisanzu.jpeg" class=" w-[900px] flex-1" alt="">
     </section>
-    <section class="px-10 py-24">
-        <h3 class="font-bold text-3xl text-[#1F2F4F] my-4">Digital transformation</h3>
-        <p class="text-gray-600 text-2xl my-4 w-[780px]">A major focus for RSSB going into 2025 is to transform into a
+    <section class="p-2 md:px-10 md:py-24">
+        <h3 class="font-bold w-screen text-xl md:text-3xl text-[#1F2F4F] my-4">Digital transformation</h3>
+        <p class="text-gray-600 w-screen text-sm md:text-2xl my-4 md:w-[780px]">A major focus for RSSB going into 2025 is to transform into a
             member
             first, <span class="text-[#f8a51b]">data driven</span>, high performing organization and a big part of that
             is to complete its <span class="text-[#f8a51b]">shift to digital</span>.</p>
-        <div class="flex space-x-10 my-6">
+        <div class="flex flex-wrap md:flex-nowrap md:space-x-10 my-6">
             <div class="">
                 <div class="bg-[#F3F5F7] p-6 size-20 rounded-full my-4"><img src="icon1.png" class="size-8" alt="">
                 </div>
-                <h4 class="text-[#1F2F4F] font-bold text-xl my-4">Changing from Legacy processes and systems</h4>
-                <p class="text-gray-600 text-lg my-4">As we enter a new era of technology advances and data-driven
+                <h4 class="text-[#1F2F4F] font-bold text-lg md:text-xl my-4">Changing from Legacy processes and systems</h4>
+                <p class="text-gray-600 text-sm md:text-lg my-4">As we enter a new era of technology advances and data-driven
                     business models, we are upgrading our systems and processes to gain in operational efficiency,
                     address technology constraints, meet members experience expectations and support adoption and
                     integration with other systems.</p>
@@ -215,8 +218,8 @@
             <div class="">
                 <div class="bg-[#F3F5F7] p-6 size-20 rounded-full my-4"><img src="icon2.png" class="size-8" alt="">
                 </div>
-                <h4 class="text-[#1F2F4F] font-bold text-xl my-4">Non-paper based processes</h4>
-                <p class="text-gray-600 text-lg my-4">We are moving away from the time-taking processes as we process
+                <h4 class="text-[#1F2F4F] font-bold text-lg md:text-xl my-4">Non-paper based processes</h4>
+                <p class="text-gray-600 text-sm md:text-lg my-4">We are moving away from the time-taking processes as we process
                     large number of member's claims. Members and partners will be enjoying the benefits such as timely
                     and faster responses and reimbursements for their claims by reducing the time taken for processes to
                     be completed.</p>
@@ -224,17 +227,17 @@
             <div class="">
                 <div class="bg-[#F3F5F7] p-6 size-20 rounded-full my-4"><img src="icon3.png" class="size-8" alt="">
                 </div>
-                <h4 class="text-[#1F2F4F] font-bold text-xl my-4">Ensure the compliance rate in mandatory contributions
+                <h4 class="text-[#1F2F4F] font-bold text-lg md:text-xl my-4">Ensure the compliance rate in mandatory contributions
                 </h4>
-                <p class="text-gray-600 text-lg my-4">Digital-led compliance for private and public institutions to
+                <p class="text-gray-600 text-sm md:text-lg my-4">Digital-led compliance for private and public institutions to
                     ensure the compliance and fraud monitoring. Our members will have a seamless and transparent access
                     of their contributions/benefits via intelligent systems and notification ecosystem.</p>
             </div>
         </div>
     </section>
-    <section class="bg-[#F9FAFB] px-10 py-24">
-        <div class="border-l border-[#D89B3D] border-l-2 px-10 py-5">
-            <p class="text-2xl font-normal w-[750px]">“We have ambitious plans to transform RSSB, by 2025, into an
+    <section class="bg-[#F9FAFB] px-3 md:px-10 py-6 md:py-24">
+        <div class="border-l border-[#D89B3D] md:border-l-2 p-3 md:px-10 md:py-5">
+            <p class=" text-base md:text-2xl font-normal w-[350px] md:w-[750px]">“We have ambitious plans to transform RSSB, by 2025, into an
                 organisation that is not just fully
                 committed to delivering for our members but that puts members at the heart of all our planning and all
                 our decision-making. Our vision is for RSSB to use all of its power and energy on behalf of our members:
@@ -242,21 +245,21 @@
                 organisation, with user-friendly, enabling technology; as a source of input to Government thinking; as a
                 national and international thought-leader in social policy; as the leading strategic investor in our
                 chosen markets; and as a prudent but ambitious business partner."</p>
-            <div class="flex space-x-4 mt-5">
-                <img src="ceo.webp" class="rounded-full size-24" alt="">
+            <div class="flex space-x-2 md:space-x-4 mt-3 md:mt-5">
+                <img src="ceo.webp" class="rounded-full size-16 md:size-24" alt="">
                 <div class="my-4">
-                    <p class="text-lg">Regis RUGEMANSHURO</p>
-                    <p class="text-lg text-gray-500">CEO, RSSB</p>
+                    <p class="text-base md:text-lg">Regis RUGEMANSHURO</p>
+                    <p class="text-base md:text-lg text-gray-500">CEO, RSSB</p>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="flex space-x-4 justify-center my-10">
+        <div class="flex space-x-1 md:space-x-4 justify-center my-3 md:my-10">
             <div class="border border-[#F8A51B] border-2 w-8 my-3"></div>
             <H2 class="font-bold text-lg text-[#242E8F]">NEWS & EVENTS</H2>
         </div>
-        <div class="flex space-x-4 p-10">
+        <div class="flex flex-wrap md:flex-nowrap space-x-4 p-2 md:p-10">
             <div>
                 <img src="image1.webp" alt="">
                 <p class="text-gray-600 text-sm font-thin my-3">7 months ago</p>
@@ -283,8 +286,50 @@
                 <a href="" class="text-[#242E8F]">Read more ...</a>
             </div>
         </div>
-        <button class="justify-center bg-white border-2 border-[#242E8F] text-[#242E8F] font-bold px-14 py-4 my-6 rounded-md">View More</button>
-
+        <div class="flex justify-center">
+            <button
+                class="justify-center bg-white hover:bg-[#242E8F] border-2 border-[#242E8F] text-[#242E8F] hover:text-white font-bold px-14 py-4 my-6 rounded-md">View
+                More</button>
+        </div>
+    </section>
+    <section class="bg-[#F3F4F6] px-10 pt-10">
+        <div class="flex flex-wrap md:flex-nowrap justify-between border-b border-b-grey-500">
+            <div>
+                <h3 class="text-[#1F2F4F] font-bold">GET IN TOUCH</h3>
+                <div class="text-gray-500 py-4">
+                    <p>KN 3 Rd African Union Boulevard</p>
+                    <p>Kiyovu, Nyarugenge</p>
+                    <p>P.O Box 250/6655 Kigali-Rwanda</p>
+                    <div class="flex space-x-1">
+                        <p>Tel:</p>
+                        <div>
+                            <p>4044 Toll free line</p>
+                            <p> 5006 EjoHeza</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-[#1F2F4F] font-bold">IMPORTANT LINKS</h3>
+                <div class="text-gray-500 py-4">
+                    <p>Tenders</p>
+                    <p>Gallery</p>
+                    <p>Announcements</p>
+                    <p>Privacy Policy</p>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-[#1F2F4F] font-bold">SERVICES</h3>
+                <div class="text-gray-500 py-4">
+                    <p>Apply For Employee Number</p>
+                    <p>Check For Your Contributions</p>
+                    <p>Pay Employee Contributions</p>
+                    <p>Pension Simulator</p>
+                    <p>RSSB Clearance Certificate</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-gray-600 my-3">© 2025 Rwanda Social Security Board</p>
     </section>
 </body>
 
